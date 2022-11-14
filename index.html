@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+            initial-scale=1, shrink-to-fit=no">
+ 
+            <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+   <!-- <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script> 
+
+   <link href="http://fonts.cdnfonts.com/css/fresh-steak" rel="stylesheet"> 
+                
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    <style>
+        body {
+          background-color: #A9A9A9;
+        }
+      </style>
+
+</head>
+    <title>Restaurant Website</title >
+
+       
+
+        
+ 
+ <body style="background-color:black;"> -->
+    
+
+
+    <div>
+
+      
+        
+           
+            <button class="navbar">
+
+
+                <ul class="main_nav">
+                    <li>
+                      <a href="#home" class="nav_links">Home</a>
+                    </li>
+                    <li>
+                      <a href="#reserve" class="nav_links">Reservation</a>
+                    </li>
+                    <li>
+                      <a href="#contact" class="nav_links">Contact</a>
+                    </li>
+                    <li>
+                      <a href="#about" class="nav_links">About us</a>
+                    </li>
+                  </ul>
+
+                  <div class="dropdown">
+                    <select id="myDropdown">
+                    <option value="" selected disabled> Menu</option>
+                      <option value="all">Starter</option>
+                      <option value="a1">Main Menu</option>
+                      <option value="a2">Dessert</option>
+                    </select>
+                  </div>
+
+                </button>
+                </div>
+
+
+               
+            
+               
+
+            <!-- <li><a href="home.asp" class="homeanchor">Home</a></li>
+            <li><a href="reservation.as" class="reservationanchor">Reservation</a></li>
+            <li><a href="contact.asp" class="contactanchor" >Contact</a></li>
+            <li><a href="about.asp" class="aboutanchor">About Us</a></li>
+
+
+            <a href="#" class="newanchor">Text to be shown on screen</a> -->
+       
+           
+
+         
+
+        <section class="about-section">
+
+            <p style="color:grey;">
+                We are proud to have been awarded 'Voted Timeout Best Steakhouse 2022’ from the prestigious Craft Guild of Chefs.  Their meticulous inspection of our field to fork practices, from the way we rear our cattle, to how our steaks are butchered, aged and cooked to perfection has led to this industry-leading award. The steps we take with our prime 30 day matured British & Irish beef ensures we deliver our signature ‘steak experience’ on every plate we serve. 
+                
+                </p>
+            <article>
+       
+
+ 
+    <!-- navbar  -->
+
+         
+    
+                
+ 
+        </article>
+    </section>
+    
+
+   <!--  <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        </style> -->
+<div>
+
+
+    <img src="img2/img.png" alt="Restaurants" class="center">
+
+
+
+</div>
+
+
+    <body>
+
+    
+        <div>
+        <img src="img2/img2.png" alt="Steak" class="center">
+
+        </div>
+        
+
+       
+
+       <!-- <div class = "menu">
+
+           <p id="viewall">View All Menu</p>
+            <p id="start">Starter</p>
+            <p id="mainmenu">Main Menu</p>
+            <p id="custard">Dessert</p> -->
+           
+             <!--
+            <button id="viewAll">View All Menu</button>
+            <button id="start">Starter</button>
+            <button id="mainMenu">Main Menu</button>
+            <button id="custard">Dessert</button>
+          
+       </div>   -->
+     
+    
+
+       <p style="text-align: center;">
+        <img src ="img2/img5.png" alt="Starter"></p>
+
+ 
+  
+    
+    <div class="container">
+        <div class="row-flex">
+            <div class="flex-column-form">
+                <h3>
+                    Make a booking
+                </h3>
+                <form class="media-centered">
+                    <div class="form-group">
+                         
+<p>  Please leave your number we will call to make a reservation</p>
+ 
+
+
+<div><input id="fname" type="text" placeholder="First Name"></div>
+<div><input id="lname" type="text" placeholder="Surname"></div>
+<div><input id="email" type="text" placeholder="Email"></div>
+<div><input id="phone" type="text" placeholder="Phone"></div>
+<div><input id="numberOfGuests" type="text" placeholder="Number of Guest"></div>
+<div><input id="specialRequests" type="text" placeholder="Special Guest"></div>
+
+<div><button id="submit">Submit/Update</button></div>
+<div><button id="delete">Delete</button></div>  
+
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBAXZ2Onmdld9EDr2kuoMp8ADnenphWzOo",
+    authDomain: "restaurant-6c417.firebaseapp.com",
+    projectId: "restaurant-6c417",
+    storageBucket: "restaurant-6c417.appspot.com",
+    messagingSenderId: "672905258893",
+    appId: "1:672905258893:web:912827c673145da1643fc4"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  var fname, lname, email, phone,numberOfGuests,specialRequests;
+
+function getdata() {
+
+
+first = document.getElementById('fname').value;
+last  = document.getElementById('lname').value;
+first = document.getElementById('fname').value;
+email = document.getElementById('email').value;
+mobileNumber = document.getElementById('phone').value;
+guest = document.getElementById('numberOfGuests').value;
+specialRequest =document.getElementById('specialRequests').value;
+
+
+}
+
+document.getElementById("submit").onclick = function () {
+
+  getdata ();
+  firebase.database().ref(id).set({
+
+    Name: fname,
+    Last: lname,
+    Email: email,
+    MobileNumber:phone,
+    Guest: numberOfGuests,
+    SpecialRequests: specialRequests
+
+    })
+
+}
+
+
+</script>
+
+</body>
+</html>
+            
+
+
+                          
+ 
+
+              
+
+         
+
+     <!-- this project code firebase.initializeApp(firebaseConfig);
+  let fname, lname, email, phone, date,time,numberOfGuests,specialRequests;
+
+  function getdata(){
+
+    name = document.getElementById('fname').value;
+    last = document.getElementById('lname').value;
+    email = document.getElementById('email').value;
+    mobileNumber = document.getElementById('phone').value;
+    dates = document.getElementById('date').value;
+    time = document.getElementById('time').value;
+    guest = document.getElementById('numberOfGuests').value;
+    specialRequest =document.getElementById('specialRequests').value; */
+    
+
+
+
+  /*document.getElementById('submit').onclick = function(){
+    getdata();
+    firebase.database().ref(id).set({
+        name: fname,
+        last: lname,
+        email: email,
+        mobileNumber:phone,
+        dates: date,
+        time: time,
+        guest: numberOfGuests,
+        specialRequests: specialRequests
+
+    })
+  } */
+
+
+ 
+
+ 
+//
+
+
+
+
+
+
+              
+
+
+
+
+
+              
+  

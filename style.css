@@ -1,0 +1,183 @@
+p{font-family: 'Fresh Steak', sans-serif;}
+                                                
+
+/* body {
+  background: url(img2/img.png);
+} */
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: inline;
+      }
+
+      li {
+        float: left;
+      }
+      
+      a {
+        display: block;
+        padding: 8px;
+        background-color: #dddddd;
+      }
+
+
+
+      img {
+        width: 60%;
+        height: 500px;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+      }
+
+      /* img {
+        height: 200px;
+        width: 200px;
+      } */
+
+      
+      /*.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400%;
+      }*/
+
+
+      /* body {
+        margin: auto;
+        width: 640px; 
+        padding: 50px;
+        font-family: 'Avenir', sans-serif; 
+        color: #33475b;    
+      } */
+      
+
+      /* body {
+        margin: auto;
+        width: 640px; 
+        padding: 50px;
+        font-family: 'Avenir', sans-serif; 
+        color: #33475b;    
+      }
+
+      /* Centered Image Code */
+      
+
+
+     
+      
+      input, textarea {
+        display: block;
+        }
+      .reservation {
+        padding-left: 25px;
+      }
+      
+
+     
+      .menu{display: flex;
+    
+      }
+  
+      p{flex: 1;}
+
+      input {
+
+      width: 20%;
+      height: 10%;
+      margin: 1em;
+      padding: 1em;
+      outline: none;
+      border-radius: 5px;
+      border: thin solid skyblue;
+  }
+  #submit{
+      
+      padding: 1em;
+      margin: 1em;
+      border-radius: 5px;
+      border: white thin;
+      background-color: rgb(3, 111, 219);
+      color: white;
+      
+  }
+  #submit:hover{
+      background-color: rgb(4, 90, 176);
+  }
+  #submit:active{
+      background-color:  rgb(60, 130, 200);
+  }
+  #delete{
+      padding: 1em;
+      margin: 1em;
+      border-radius: 5px;
+      border: white thin;
+      background-color: rgb(219, 30, 30);
+      color: white;
+  }
+  #delete:hover{
+      background-color: rgb(162, 30, 30);;
+  }
+  #delete:active{
+      background-color:   rgb(212, 92, 92)
+
+
+      input {
+        width: 20%;
+        height: 10%;
+        margin: 1em;
+        padding: 1em;
+        outline: none;
+        border-radius: 5px;
+        border: thin solid skyblue;
+    } 
+
+    #submit{
+        
+        padding: 1em;
+        margin: 1em;
+        border-radius: 5px;
+        border: white thin;
+        background-color: rgb(3, 111, 219);
+        color: white;
+        
+    }
+    #submit:hover{
+        background-color: rgb(4, 90, 176);
+    }
+    #submit:active{
+        background-color:  rgb(60, 130, 200);
+    }
+    #delete{
+        padding: 1em;
+        margin: 1em;
+        border-radius: 5px;
+        border: white thin;
+        background-color: rgb(219, 30, 30);
+        color: white;
+    }
+    #delete:hover{
+        background-color: rgb(162, 30, 30);;
+    }
+    #delete:active{
+        background-color:   rgb(212, 92, 92);
+    }
+
+
+    /*body {
+      background-color:  #1c87c9;
+      } */
+
+
+      
